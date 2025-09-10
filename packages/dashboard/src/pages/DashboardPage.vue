@@ -64,15 +64,13 @@ interface Activity {
   timeAgo: string
 }
 
-interface Props {
-  userName?: string
-}
-
 interface Emits {
   logout: []
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<{
+  userName?: string
+}>(), {
   userName: 'ユーザー'
 })
 

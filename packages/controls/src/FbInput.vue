@@ -23,7 +23,13 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-interface Props {
+interface Emits {
+  'update:modelValue': [value: string]
+  'blur': [event: FocusEvent]
+  'focus': [event: FocusEvent]
+}
+
+const props = withDefaults(defineProps<{
   modelValue?: string
   type?: 'text' | 'email' | 'password' | 'number'
   label?: string
@@ -31,15 +37,7 @@ interface Props {
   disabled?: boolean
   required?: boolean
   errorMessage?: string
-}
-
-interface Emits {
-  'update:modelValue': [value: string]
-  'blur': [event: FocusEvent]
-  'focus': [event: FocusEvent]
-}
-
-const props = withDefaults(defineProps<Props>(), {
+}>(), {
   modelValue: '',
   type: 'text',
   disabled: false,

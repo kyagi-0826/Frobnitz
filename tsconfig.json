@@ -8,7 +8,6 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -27,7 +26,8 @@
       "@frobnitz/common/*": ["packages/common/src/*"],
       "@frobnitz/login/*": ["packages/login/src/*"],
       "@frobnitz/dashboard/*": ["packages/dashboard/src/*"]
-    }
+    },
+    "composite": true
   },
   "include": ["packages/*/src/**/*.ts", "packages/*/src/**/*.d.ts", "packages/*/src/**/*.tsx", "packages/*/src/**/*.vue"],
   "exclude": ["node_modules", "dist"],

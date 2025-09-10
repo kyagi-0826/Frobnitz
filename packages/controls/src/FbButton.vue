@@ -11,18 +11,16 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-interface Props {
-  variant?: 'primary' | 'secondary' | 'danger'
-  size?: 'small' | 'medium' | 'large'
-  disabled?: boolean
-  label?: string
-}
-
 interface Emits {
   click: [event: MouseEvent]
 }
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<{
+  variant?: 'primary' | 'secondary' | 'danger'
+  size?: 'small' | 'medium' | 'large'
+  disabled?: boolean
+  label?: string
+}>(), {
   variant: 'primary',
   size: 'medium',
   disabled: false,

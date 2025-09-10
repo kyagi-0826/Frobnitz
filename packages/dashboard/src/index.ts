@@ -1,4 +1,4 @@
-import DashboardPage from '../pages/DashboardPage.vue'
+import DashboardPage from './pages/DashboardPage.vue'
 import './style.css'
 
 export {
