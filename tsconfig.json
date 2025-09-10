@@ -25,7 +25,8 @@
     "paths": {
       "@frobnitz/controls/*": ["packages/controls/src/*"],
       "@frobnitz/common/*": ["packages/common/src/*"],
-      "@frobnitz/pages/*": ["packages/pages/src/*"]
+      "@frobnitz/login/*": ["packages/login/src/*"],
+      "@frobnitz/dashboard/*": ["packages/dashboard/src/*"]
     }
   },
   "include": ["packages/*/src/**/*.ts", "packages/*/src/**/*.d.ts", "packages/*/src/**/*.tsx", "packages/*/src/**/*.vue"],
@@ -33,6 +34,7 @@
   "references": [
     {"path": "./packages/controls"},
     {"path": "./packages/common"},
-    {"path": "./packages/pages"}
+    {"path": "./packages/login"},
+    {"path": "./packages/dashboard"}
   ]
 }
