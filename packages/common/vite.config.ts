@@ -7,6 +7,12 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'FrobnitzCommon',
       fileName: 'index'
+    },
+    rollupOptions: {
+      output: {
+        // Ensure we preserve the library structure for proper type generation
+        exports: 'named'
+      }
     }
   }
 })
