@@ -14,7 +14,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { LoginPage, DashboardPage } from '@frobnitz/pages'
+import { LoginPage } from '@frobnitz/login'
+import { DashboardPage } from '@frobnitz/dashboard'
 
 const isLoggedIn = ref(false)
 const currentUser = ref('')

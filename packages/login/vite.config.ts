@@ -4,6 +4,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
+  css: {
+    postcss: resolve(__dirname, '../../postcss.config.js')
+  },
   resolve: {
     alias: {
       '@frobnitz/controls': resolve(__dirname, '../controls/src'),
@@ -13,7 +16,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'FrobnitzPages',
+      name: 'FrobnitzLogin',
       fileName: 'index'
     },
     rollupOptions: {
