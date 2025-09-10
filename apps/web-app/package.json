@@ -12,7 +12,8 @@
   "dependencies": {
     "@frobnitz/controls": "^1.0.0",
     "@frobnitz/common": "^1.0.0",
-    "@frobnitz/pages": "^1.0.0",
+    "@frobnitz/dashboard": "^1.0.0",
+    "@frobnitz/login": "^1.0.0",
     "vue": "^3.3.0"
   },
   "devDependencies": {
