@@ -1,4 +1,4 @@
-import LoginPage from '../pages/LoginPage.vue'
+import LoginPage from './pages/LoginPage.vue'
 import './style.css'
 
 export {

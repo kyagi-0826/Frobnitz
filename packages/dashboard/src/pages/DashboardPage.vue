@@ -4,13 +4,13 @@
       <h1>ダッシュボード</h1>
       <div class="header-actions">
         <span class="welcome-text">ようこそ、{{ userName }}さん</span>
-        <FbButton
+        <BaseButton
           variant="secondary"
           size="small"
           @click="handleLogout"
         >
           ログアウト
-        </FbButton>
+        </BaseButton>
       </div>
     </header>
     
@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { FbButton } from '@frobnitz/controls'
+import { BaseButton } from '@frobnitz/controls'
 import { formatDate, getRelativeTime } from '@frobnitz/common'
 
 interface Activity {

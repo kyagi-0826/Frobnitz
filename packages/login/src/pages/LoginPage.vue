@@ -5,7 +5,7 @@
       
       <form @submit.prevent="handleSubmit">
         <div class="form-group">
-          <FbInput
+          <BaseInput
             v-model="email"
             type="email"
             label="メールアドレス"
@@ -16,7 +16,7 @@
         </div>
         
         <div class="form-group">
-          <FbInput
+          <BaseInput
             v-model="password"
             type="password"
             label="パスワード"
@@ -27,7 +27,7 @@
         </div>
         
         <div class="form-actions">
-          <FbButton
+          <BaseButton
             type="submit"
             variant="primary"
             size="large"
@@ -35,7 +35,7 @@
             class="login-button"
           >
             {{ isLoading ? 'ログイン中...' : 'ログイン' }}
-          </FbButton>
+          </BaseButton>
         </div>
       </form>
       
@@ -48,7 +48,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { FbButton, FbInput } from '@frobnitz/controls'
+import { BaseButton, BaseInput } from '@frobnitz/controls'
 import { isValidEmail, isRequired } from '@frobnitz/common'
 
 interface Emits {
