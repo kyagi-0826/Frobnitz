@@ -1,12 +1,15 @@
-import FbButton from './FbButton.vue'
-import FbInput from './FbInput.vue'
+import BaseButton from './BaseButton.vue'
+import BaseInput from './BaseInput.vue'
+import BaseCard from './BaseCard.vue'
 
 export {
-  FbButton,
-  FbInput
+  BaseButton,
+  BaseInput,
+  BaseCard
 }
 
 export default {
-  FbButton,
-  FbInput
+  BaseButton,
+  BaseInput,
+  BaseCard
 }

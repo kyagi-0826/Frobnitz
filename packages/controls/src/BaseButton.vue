@@ -30,11 +30,11 @@ const props = withDefaults(defineProps<{
 const emit = defineEmits<Emits>()
 
 const buttonClasses = computed(() => [
-  'fb-button',
-  `fb-button--${props.variant}`,
-  `fb-button--${props.size}`,
+  'base-button',
+  `base-button--${props.variant}`,
+  `base-button--${props.size}`,
   {
-    'fb-button--disabled': props.disabled
+    'base-button--disabled': props.disabled
   }
 ])
 
@@ -46,7 +46,7 @@ const handleClick = (event: MouseEvent) => {
 </script>
 
 <style scoped>
-.fb-button {
+.base-button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -54,49 +54,49 @@ const handleClick = (event: MouseEvent) => {
   transition: all 0.2s ease;
 }
 
-.fb-button--primary {
+.base-button--primary {
   background-color: #007bff;
   color: white;
 }
 
-.fb-button--primary:hover:not(.fb-button--disabled) {
+.base-button--primary:hover:not(.base-button--disabled) {
   background-color: #0056b3;
 }
 
-.fb-button--secondary {
+.base-button--secondary {
   background-color: #6c757d;
   color: white;
 }
 
-.fb-button--secondary:hover:not(.fb-button--disabled) {
+.base-button--secondary:hover:not(.base-button--disabled) {
   background-color: #545b62;
 }
 
-.fb-button--danger {
+.base-button--danger {
   background-color: #dc3545;
   color: white;
 }
 
-.fb-button--danger:hover:not(.fb-button--disabled) {
+.base-button--danger:hover:not(.base-button--disabled) {
   background-color: #c82333;
 }
 
-.fb-button--small {
+.base-button--small {
   padding: 4px 8px;
   font-size: 12px;
 }
 
-.fb-button--medium {
+.base-button--medium {
   padding: 8px 16px;
   font-size: 14px;
 }
 
-.fb-button--large {
+.base-button--large {
   padding: 12px 24px;
   font-size: 16px;
 }
 
-.fb-button--disabled {
+.base-button--disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
